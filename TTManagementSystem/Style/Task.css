@@ -1,0 +1,216 @@
+﻿/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*-----------------------------------------------------------------My change-------------------------------------------------------------------*/
+body {
+    background-color: aliceblue;
+}
+.content {
+    margin-left:40px;
+}
+.location {
+    float:left;
+    width:200px;
+}
+
+span.Task1{
+    display:inline-block;
+    margin-right:100px;
+}
+span.Task2{
+    display:inline-block;
+    margin-right: 100px;
+}
+.panel-default > div.OPEN {
+    color:#333;
+    background-color:#ff7f7f;
+    border: 1px solid black;
+}
+.panel-default > div.INPROGRESS {
+    color:#333;
+    background-color:#ffefaf;
+    border: 1px solid black;
+}
+.panel-default > div.ESCALATE {
+    color:#333;
+    background-color:#7fc9ff;
+    border: 1px solid black;
+}
+.panel-default > div.CLOSED {
+    color:#333;
+    background-color:#a1ff7f;
+    border: 1px solid black;
+}
+a.Assign {
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.lblNoTask {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+margin-bottom: 10px;
+}
+section.assign, section.Task {
+    width: 1300px;
+    float:left;
+    margin-left:30px;
+    padding:10px;
+    border: 2px solid black;
+}
+section.assign {
+    margin-bottom: 10px;
+    border:0px;
+    padding:0px;
+}
+section.Task {
+    overflow: auto;
+}
+
+div.assign {
+    margin-bottom: 0px;
+}
+
+div.collapseAssign > p {
+    float:left;
+    width:100px;
+    margin-top:3px;
+}
+div.collapseAssign > span {
+    float:left;
+    margin-bottom:10px;
+}
+
+.subject, .description {
+    clear: left;
+    margin: 4px 3px 3px 3px;
+}
+.txbsubject {
+    width: 800px;
+    height: 22px;
+    margin: 3px;
+}
+.txbdescription {
+    width:800px;
+    height:200px;
+    margin: 3px;
+}
+.btnAssign {
+    clear:left;
+    margin-left:100px;
+    width: 100px;
+display: block;
+margin: auto;
+}
+.ddlSeverity, .ddlAssignTo{
+    float: left;
+margin: 3px auto;
+}
+#lblSeverity, #lblRoom {
+    clear: left;
+float: left;
+width: 100px;
+padding-top: 3px;
+margin: 3px;
+}

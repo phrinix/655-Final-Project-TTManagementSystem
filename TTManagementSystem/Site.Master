@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="TTManagementSystem.Site1" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %></title>
+    <link href="Style/Master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">
+                        <a id="A1" runat="server" href="~/Home.aspx">TTManagement System</a>
+                    </p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        <ul>
+                            <li runat="server">Welcome <asp:Label ID="lblName" runat="server" Text=""></asp:Label></li>
+                            
+                        </ul>
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <%if(userRoll == "ADMIN") {%><li runat="server"><a runat="server" href="~/Admin.aspx">Admin</a></li><%} %>
+                            <%if(userRoll != "CLIENT") {%><li runat="server"><a runat="server" href="~/Task.aspx">Task</a></li><%} %>
+                            <li runat="server"><a runat="server" href="~/Home.aspx">Tickets</a></li>
+                            <li runat="server"><a runat="server" href="~/SignOut.aspx">Sign Out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    <div class="body">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
